@@ -1,0 +1,277 @@
+/* Общие стили */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    position: relative;
+    width: 200px;
+    height: 200px; 
+    border: 2px solid rgb(255, 255, 255);
+    display: inline;
+    top: 100px
+}
+
+/* фон */
+.scene {
+    position: absolute;
+    width: 100%;
+    height: 175px;
+    background: linear-gradient(to bottom, #87CEEB, #ffffff);
+    overflow: hidden;
+}
+
+/* Пол с желтыми и зелеными полосками */
+.floor {
+    position: absolute;
+    width: 200px;
+    height: 25px;
+    top: 175px; 
+    background: repeating-linear-gradient(
+        -45deg,
+        yellow,
+        yellow 10px,
+        rgb(100, 225, 100) 10px,
+        rgb(100, 225, 100) 20px
+    );
+}
+
+/* Ослик */
+.donkey {
+    position: relative;
+    width: 150px;
+    height: 140px; 
+    top: 10px; 
+    left: 20px;
+}
+
+/* Тело осла в виде овала */
+.body {
+    width: 100px;
+    height: 50px;
+    background-color: #808080;
+    border-radius: 100px/50px;
+    position: absolute;
+    left: 55px;
+    top: 90px;
+    border: 1px solid #404040;
+    background: radial-gradient(circle at 30% 70%, #ffffff 2%, #808080 40%, #808080 100%);
+   z-index: 1; 
+}
+/* шея */
+.neck {
+    width: 20px;
+    height: 20px;
+    background-color: #808080;
+    position: absolute;
+    top: 85px; 
+    left: 50px;
+    z-index: 0; 
+    transform: rotate(-40deg);
+}
+
+/* уши */
+.left-ear {
+    width: 60px;
+    height: 13px;
+    background-color: #808080;
+    border-radius: 200px/50px;
+    position: absolute;
+    left: 60px;
+    top: 70px;
+    background: radial-gradient(circle at right, #ffffff 5%, #808080 40%, #808080 100%);
+    z-index: 0; 
+   transform: rotate(-5deg);
+}
+
+.right-ear {
+    width: 60px;
+    height: 13px;
+    background-color: #808080;
+    border-radius: 200px/50px;
+    position: absolute;
+    left: 55px;
+    top: 55px;
+    background: radial-gradient(circle at right, #ffffff 5%, #808080 40%, #808080 100%);
+    z-index: 0; 
+   transform: rotate(-30deg);
+}
+
+/* Голова */
+.head {
+    width: 60px;
+    height: 30px;
+    background-color: #808080;
+    border-radius: 100px/50px;
+    position: absolute;
+    left: 15px;
+    top: 70px;
+    background: radial-gradient(circle at left, #ffffff 5%, #808080 40%, #808080 100%);
+    z-index: 2; 
+    border: 1px solid #404040;
+   transform: rotate(-20deg);
+}
+
+/* Ноги осла в виде трапеций */
+.leg {
+    width: 15px;
+    height: 30px; 
+    background-color: #808080;
+    position: absolute;
+    bottom: -10px;
+    clip-path: polygon(0 0%, 100% 0%, 80% 100%, 20% 100%);
+}
+
+.front-left-leg {
+    left: 60px;
+    top: 133px;
+    transform: rotate(23deg);
+    height: 35px; 
+}
+
+.front-right-leg {
+    left: 80px;
+    top: 139px;
+    transform: rotate(10deg);
+}
+
+.back-left-leg {
+    left: 120px;
+    top: 138px;
+    transform: rotate(-9deg);
+}
+
+.back-right-leg {
+    left: 140px;
+    top: 131px;
+    transform: rotate(-23deg);
+    height: 40px; 
+}
+
+/*хвост */
+.tail-1 { 
+    position: absolute; 
+    width: 14px; 
+    height: 7px; 
+    border-top-left-radius: 110px;   
+    border-top-right-radius: 110px;  
+    border: 3px solid #808080; 
+    border-bottom: 0; 
+    transform: rotate(90deg); 
+    top: 105px;
+    left: 151px; 
+  } 
+ 
+.tail-2 { 
+    position: absolute; 
+    width: 14px; 
+    height: 7px; 
+    border-top-left-radius: 110px;    
+    border-top-right-radius: 110px;  
+    border: 3px solid #808080; 
+    border-bottom: 0; 
+    transform: rotate(270deg); 
+    top: 88.3px; 
+    left: 143px;  
+  } 
+ 
+  .tail-3{ 
+    position: absolute; 
+    width: 0; 
+   height: 0; 
+border-left: 4px solid transparent; 
+ border-right: 4px solid transparent; 
+ border-bottom: 8px solid #808080; 
+    transform: rotate(250deg); 
+    top: 81px; 
+    left: 154px; 
+  }
+
+  /* Глаз */
+  .eye-1 {
+      width: 10px;
+      height: 10px;
+      background: radial-gradient(circle at left, rgb(0, 0, 0) 30%, rgb(255, 255, 255) 31%);
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      left: 35px; 
+  }
+ 
+  /*рот */
+  .mouth {
+    font-size: 10px;
+    width: 25px; 
+    height: 25px; 
+    overflow: hidden;
+    position: relative;
+}
+
+.mouth:before {
+    content: "";
+    position: absolute;
+    top: 5;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: -2px -2px 0 #404040; 
+    transform-origin: left center;
+    transform: rotate(-60deg) translate(2px, 3px); 
+}
+
+
+  /* Нос */
+  .nose {
+    width: 5px; 
+    height: 5px;
+    background: #404040;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 7px; 
+}
+ 
+.ball-1 {
+    position: absolute; 
+    width: 50px; 
+    height: 25px;
+    background: #ff0000;
+    border-radius: 100px/50px;
+    transform: rotate(75deg); 
+    top: 30px; 
+    left: -40px; 
+    background: radial-gradient(circle at 30% 70%, #ffffff 2%, #ff0000 40%, #ff0000 100%);
+    z-index: 1; 
+}
+
+
+.ball-2{
+    position: absolute; 
+    width: 0; 
+ height: 0; 
+ border-left: 4px solid transparent; 
+ border-right: 4px solid transparent; 
+ border-bottom: 8px solid #ff0000; 
+    transform: rotate(-30deg); 
+    top: 63px; 
+    left: -10px; 
+    z-index: 1; 
+}
+
+.ball-3 {
+    position: absolute; 
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 0 0 rgb(38, 255, 0);
+    transform: rotate(-20deg); 
+    top: 55px; 
+    left: -90px; 
+    z-index: 0; 
+}

@@ -1,0 +1,119 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  text-align: left;
+  width: 100%;
+  padding: 0;
+  margin-top: 100px; 
+}
+
+.product-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product-header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-header .price {
+  font-size: 22px;
+  color: #0073e6;
+  margin-top: 5px;
+}
+
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+}
+
+.specifications {
+  flex: 1;
+  max-width: 50%;
+  padding: 10px;
+}
+
+.specifications h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.specifications ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.specifications li {
+  margin-bottom: 8px;
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact-info h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: #555;
+}
+
+.contact-info a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.navigacia {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.navigacia a {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.navigacia a:hover {
+  text-decoration: underline;
+}
+
+.navigacia span {
+  color: #333;
+  font-weight: bold;
+}

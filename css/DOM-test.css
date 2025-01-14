@@ -1,0 +1,109 @@
+/* Общие стили */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+.left-button {
+    position: fixed; 
+    top: 80px;  
+    left: 5px; 
+    width: 170px; 
+    height: 60px;  
+    padding: 0;  
+    background-color: #000000; 
+    color: rgb(255, 255, 255); 
+    border: none; 
+    cursor: pointer; 
+    font-size: 30px; 
+    font-weight: bold; 
+    text-align: center; 
+    border-radius: 5px; 
+    overflow: hidden;  
+}
+
+.left-button:hover {
+    background-color: #404040; 
+}
+
+
+.hide {
+    transform: translateY(300px); 
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.question-container {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start; 
+    margin-bottom: 20px; 
+}
+
+.question-container button {
+    flex: 0 0 400px; 
+    height: 70px; 
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin-right: 20px; 
+}
+
+.answers-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    flex: 1; 
+}
+
+.answers-container button {
+    flex: 1 1 calc(25% - 10px); 
+    height: 70px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.answers-container button:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease; 
+}
+
+@media (max-width: 800px) {
+    .answers-container button {
+        flex: 1 1 calc(50% - 10px); 
+    }
+}
+
+@media (max-width: 500px) {
+    .answers-container button {
+        flex: 1 1 100%; 
+    }
+}
+
+@media (max-width: 800px) {
+    .question-container {
+        flex-direction: column; 
+    }
+    .question-container button {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+}
+
+.shake {
+    animation: shake 0.3s ease;
+}
+
+@keyframes shake {
+    0% { transform: translate(0); }
+    25% { transform: translate(-5px, 0); }
+    50% { transform: translate(5px, 0); }
+    75% { transform: translate(-5px, 0); }
+    100% { transform: translate(0); }
+}
+

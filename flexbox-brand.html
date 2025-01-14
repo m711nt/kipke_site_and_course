@@ -1,0 +1,99 @@
+<link rel="stylesheet" href="css/flexbox-brand.css">
+<link rel="stylesheet" href="css/general.css">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-бренд</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог техники</a></li>
+            <li><a href="service.html">Сервисное обслуживание</a></li>
+            <li><a href="css-drawing.html">Рисунок CSS</a></li>
+            <li><a href="flexbox-brand.html">Flexbox-бренд</a></li>
+            <li><a href="DOM-test.html">DOM-тест</a></li>
+            <li><a href="words.html">Слова</a></li>
+            <li><a href="start.html">Курсовая работа</a></li>
+        </ul>
+        </nav>
+        <button class="mobile-menu" id="mobileMenu">
+            Меню <span class="menu-icon">☰</span>
+        </button>
+        <div class="mobile-links" id="mobileLinks">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог техники</a>
+            <a href="service.html">Сервисное обслуживание</a>
+            <a href="css-drawing.html">Рисунок CSS</a>
+            <a href="flexbox-brand.html">Flexbox-бренд</a>
+            <a href="DOM-test.html">DOM-тест</a>
+            <a href="words.html">Слова</a>
+            <a href="start.html">Курсовая работа</a>
+        </div>
+    </header>
+
+    <div class="container">        
+        <div class="scene" tabindex="0"> 
+            <div class="letters">
+                <div class="K">
+                    <!-- Буква "К" -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 100 100" overflow="visible">
+                        <path id="pathK" d="M0.272728 94V0.909088H11.5455V47.0909H12.6364L54.4545 0.909088H69.1818L30.0909 42.9091L69.1818 94H55.5455L23.1818 50.7273L11.5455 63.8182V94H0.272728Z" fill="#000" stroke="#000" stroke-width="1"/>
+                        <circle class="anim">
+                            <animateMotion dur="3s" repeatCount="indefinite">
+                                <mpath href="#pathK" />
+                            </animateMotion>
+                        </circle>
+                    </svg>
+                </div>
+                <div class="N">
+                    <!-- Буква "И" -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 100 100" overflow="visible">
+                        <path id="pathN" d="M0.272728 0.909088H11.3636V74.1818H12.2727L63.1818 0.909088H74.0909V94H62.8182V20.9091H61.9091L11.1818 94H0.272728V0.909088Z" fill="#000" stroke="#000" stroke-width="1"/>
+                        <circle class="anim">
+                            <animateMotion dur="3s" repeatCount="indefinite">
+                                <mpath href="#pathN" />
+                            </animateMotion>
+                        </circle>
+                    </svg>
+                </div>
+            </div>
+            <div class="shadow"></div> 
+            <div class="text">Echte Liebe</div>   
+            <img src="images/bvb.png" alt="Image" class="hidden-img"> 
+        </div>
+    </div>
+
+    <main>
+        <div style="height:150px;"></div>
+    </main>
+
+
+    <footer>
+        <div class="map-container">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1993.6075908208468!2d30.38552637759195!3d60.02158037495689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963371d679f53d%3A0xb2d12592e353fac7!2z0YPQuy4g0JLQsNCy0LjQu9C-0LLRi9GFLCAxMCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NTI1Nw!5e0!3m2!1sru!2sru!4v1730922209947!5m2!1sru!2sru"
+                width="100%" 
+                height="600" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="eager" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="contact-info-overlay">
+                <h3><strong>Наши контакты</strong></h3>
+                <p><strong>г. Санкт-Петербург, ул. Вавиловых 10к2</strong></p>
+                <p><strong><a href="tel:+70123456789">+7-012-345-67-89</a></strong></p>
+                <p><strong>Email: infoASS@yandex.ru</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

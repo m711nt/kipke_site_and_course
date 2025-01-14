@@ -1,0 +1,170 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; 
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  padding: 80px 20px 20px; 
+  width: 100%;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+  max-height: 800px;
+  object-fit: cover;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  margin-top: -20px;
+}
+
+.name {
+  position: absolute;
+  top: 7%;
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+
+  background-color: #ff9900b1;
+  
+}
+
+@media (min-width: 1024px) {
+  .name {
+    top: 15%;
+    font-size: 42px; 
+  }
+
+  .subtitle {
+    font-size: 32px; 
+  }
+}
+
+@media (max-width: 480px) {
+
+  .name {
+    font-size: 22px; 
+  }
+
+  .subtitle {
+    font-size: 16px; 
+  }
+}
+
+
+header {
+  width: 100%;
+  background-color: #3a3a3a; 
+  color: #ffffff; 
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+  width: 300px; 
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  resize: none;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: rgb(1,57,116)F; 
+  outline: none; 
+}
+
+button {
+  background-color: rgb(1,57,116); 
+  color: #ffffff; 
+  border: none;
+  padding: 10px;
+  border-radius: 4px; 
+  cursor: pointer; 
+  width: 100%;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3; 
+}
+
+.consent-checkbox {
+  display: flex;
+  align-items: left;
+  margin-bottom: 15px;
+}
+
+.contact-info {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
